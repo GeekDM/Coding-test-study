@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-void main(){
+int main(){
 	int s_num = 0;	/* 과목 수를 저장할 변수 */
 	int p_num = 0;	/* 사람 수를 저장할 변수 */
 	
@@ -10,7 +10,7 @@ void main(){
 	for(int i=0; i<s_num; i++){
 		scanf("%d", &p_num);
 		float score[p_num];	/* 학생들의 점수를 저장할 배열 */
-		int count = 0;		/* 조건에 해당하는 사람 수를 저장할 변수 */
+		float count = 0;		/* 조건에 해당하는 사람 수를 저장할 변수 */
 		float s_avg = 0;	/* 평균을 저장할 변수 */
 		
 		for(int j=0; j<p_num; j++){
@@ -34,9 +34,11 @@ void main(){
 	}
 	
 	for(int i=0; i<s_num; i++){
-		printf("%.000f%%\n", avg[i]);
+		printf("%.3f%%\n", avg[i]);
 	}
-};
+	
+	return 0;
+}
 
 /*
 1. 과목 수를 입력 받음 											int s_num;
