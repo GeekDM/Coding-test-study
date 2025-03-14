@@ -28,3 +28,11 @@ float fake(int max, int score){
 	
 	return new_score;
 }
+
+/*
+1. 과목 수를 입력 받음
+2. 구목 점수를 입력 받음
+3. 최댓값을 구함
+4. 새로운 값으로 바꿈
+5. 
+*/
