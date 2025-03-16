@@ -24,7 +24,7 @@ int main(){
 	}
 	
 	for(int i = 0; i < num; i++){	// 새로운 값으로 바꾸고 전체 합을 구하는 반복문
-		score[i] = new_score(max, score[i]);
+		score[i] = fake(max, score[i]);
 		sum += score[i];
 	}
 	
@@ -36,9 +36,6 @@ int main(){
 }
 
 float fake(float max, float score){	// 새로운 값으로 바꾸는 함수
-	float score = score;
-	float max = max;
-	
 	float new_score;
 	
 	new_score = score/max*100;
