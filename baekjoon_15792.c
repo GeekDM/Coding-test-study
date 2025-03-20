@@ -2,13 +2,13 @@
 
 int main(){
 	
-	double n1, n2, result;
+	long double n1, n2, result;
 	
-	scanf("%lf %lf", &n1, &n2);
+	scanf("%Lf %Lf", &n1, &n2);
 	
 	result = n1 / n2;
 	
-	printf("%lf", result);
+	printf("%Lf", result);
 	
 	return 0;
 }
